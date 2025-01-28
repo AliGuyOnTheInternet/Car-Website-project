@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2001 Elysion Vision</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>2001 Elysion Vision</h1>
+        <p>The Future of Efficiency</p>
+      </header>
+
+      <section class="car-showcase">
+        <img
+          id="carImage"
+          src="./assets/Images/2001_Elysion_Vision_5-Speed_(Front).png"
+          alt="Elysion Vision Front"
+        />
+        <button onclick="toggleImage()">🔄 Change View</button>
+      </section>
+
+      <section class="details">
+        <h2>Specifications</h2>
+        <table>
+          <tr>
+            <th>Trim</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>CVT</td>
+            <td>$8,000</td>
+          </tr>
+          <tr>
+            <td>Regular 5-Speed</td>
+            <td>$8,000</td>
+          </tr>
+        </table>
+
+        <h2>Performance</h2>
+        <ul>
+          <li><strong>Engine:</strong> 1.0L 3-Cylinder + Electric Assist</li>
+          <li><strong>Horsepower:</strong> 67 HP</li>
+          <li><strong>Drivetrain:</strong> FWD</li>
+          <li><strong>Top Speed:</strong> 103 MPH (CVT) / 118 MPH (5-Speed)</li>
+          <li><strong>Fuel Efficiency:</strong> 689 Miles Per Gallon</li>
+        </ul>
+
+        <h2>Available Colors</h2>
+        <div class="color-selector">
+          <button
+            class="color-btn blue"
+            onclick="changeColor('Monte Carlo Blue Pearl')"
+          >
+            🔵
+          </button>
+          <button class="color-btn green" onclick="changeColor('Nature Green')">
+            🟢
+          </button>
+          <button
+            class="color-btn aqua"
+            onclick="changeColor('Aquamarine Blue Metallic')"
+          >
+            🔷
+          </button>
+          <button
+            class="color-btn silver"
+            onclick="changeColor('Sebring Silver Metallic')"
+          >
+            ⚪
+          </button>
+          <button
+            class="color-btn red"
+            onclick="changeColor('New Formula Red')"
+          >
+            🔴
+          </button>
+          <button
+            class="color-btn gray"
+            onclick="changeColor('Silverstone Metallic')"
+          >
+            ⚫
+          </button>
+        </div>
+        <p id="selectedColor">Current Color: Nature Green</p>
+      </section>
+
+      <footer>
+        <p>© 2001 Elysion Motors | Designed for Greenville</p>
+      </footer>
+    </div>
+  </body>
+</html>
